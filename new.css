@@ -1,0 +1,161 @@
+/* Define some variables for colors and fonts */
+:root {
+    --blue: #1a73e8;
+    --grey: #e0e0e0;
+    --white: #ffffff;
+    --black: #000000;
+    --font: Arial, sans-serif;
+}
+
+/* Use a universal selector to reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Use a body selector to set the background color and font */
+body {
+    background-color: var(--grey);
+    font-family: var(--font);
+}
+
+/* Use a header selector to style the header section */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color:#202737;
+}
+.section-1 {
+    Background-color:#202737;
+    padding:0;
+}
+.section-2 {
+    display:inline-block;
+    color:white;
+  /*   font-size:12px; */
+}
+.box-1 {
+    height:100px;
+    width:150px;  
+    background-color:var(--grey);
+    float:right;
+    text-align:center;
+    justify-content:center;
+    padding-top:25px;
+}
+.box-2 {   
+    height:auto;
+    width:100%;
+    border-radius:10px;
+    display:block;
+} 
+
+/* Use a logo selector to style the logo */
+.logo {
+    color: var(--white);
+    display:flex;
+    background-color:#202737
+}
+
+/* Use a links selector to style the links */
+.links {
+    display: flex;
+    gap: 10px;
+}
+
+/* Use an a selector to style all the links */
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+.text p {
+    padding-bottom:20px;
+    padding-top:5px;
+    font-size:12px;
+}
+.text {
+    padding-right:15px;
+    margin:0;    
+}
+
+/* Use a button selector to style all the buttons */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--white);
+    color: var(--blue);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;    
+}
+
+/* Use a main selector to style the main section */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* Use an info selector to style the info section */
+.info {
+    margin: 20px 0;
+  /*  color: var(--white); */
+    background-color:white;
+}
+
+/* Use a grid selector to create a grid layout for the info items */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+/* Use an item selector to style the info items */
+.item {
+    height: 200px;
+    border-radius:10px;
+    width:100%;
+    border-radius:10px;
+    border:1px solid blue;
+}
+
+/* Use a quote selector to style the quote section */
+.quote {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: var(--grey);
+    color: var(--black);
+    
+}
+
+/* Use a span selector to style the quote author */
+span {
+    display: block;
+    text-align: right;
+}
+
+/* Use a cta selector to style the call to action section */
+.cta {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: var(--white);
+    color: var(--black);
+    text-align: center;
+}
+
+/* Use a footer selector to style the footer section */
+footer {
+    padding: 20px;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+}
+
+/* Use a media query to make the layout responsive for smaller screens */
+@media (max-width: 768px) {
+    /* Use a grid selector to change the grid layout for the info items */
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
